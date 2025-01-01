@@ -1,0 +1,2 @@
+curl -X 'GET' 'http://localhost:8888/gen-ai/v1/llm/extracts?text=Expected%20Testing&vectorDbToConnect=chromadb&vectorDbMetadataPath=C%3A%5CVijay%5CJava%5Cprojects%5Copenapi-ai-trials%5CLLM-gen-ai%5Clangchain4j%5Cgen-ai-local-vectordb-automation%5Cknowledge-repo%5Cextract-PCI-DSS.txt&embeddingsMinScore=0.5&embeddingModelFullName=sentence-transformers%2Fall-MiniLM-L6-v2&temperature=0.5&retrievalLimitMax=5'  -H 'accept: */*'
+echo

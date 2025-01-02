@@ -108,7 +108,7 @@ IF /I "%USER_PREF%" NEQ "Y" (
 
 IF /I %USER_PREF%==Y (
 
-   echo Please provide a directory path to store qdrant related data as shown in this example format   /c:/data/qdrant
+   echo Please provide an existing empty directory path to store qdrant related data as shown in this example format   /c:/qdrant/data
    set /p "QDRANT_STORE_LOC="
 
    echo launching qdrant in a new command console.

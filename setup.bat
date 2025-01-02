@@ -106,10 +106,10 @@ IF /I "%USER_PREF%" NEQ "Y" (
     goto :endqdrant
 )
 
-IF /I %USER_PREF%==Y (
+echo Please provide an existing empty directory path to store qdrant related data as shown in this example format   /c:/qdrant/data
+set /p "QDRANT_STORE_LOC="
 
-   echo Please provide an existing empty directory path to store qdrant related data as shown in this example format   /c:/qdrant/data
-   set /p "QDRANT_STORE_LOC="
+IF /I %USER_PREF%==Y (
 
    echo launching qdrant in a new command console.
    start cmd.exe /c    docker run -p 6333:6333 -p 6334:6334 -v %QDRANT_STORE_LOC%:z qdrant/qdrant

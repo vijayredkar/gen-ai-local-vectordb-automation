@@ -241,7 +241,6 @@ echo created %db_info_full_path%
 
 echo.
 echo Launching the application to operate on the Vector DBs
-cd  gen-ai-local-vectordb-automation
 
 call mvn clean install
 start cmd.exe /c java -jar target/gen-ai-local-vectordb.jar Standalone-LOCAL-MC internal
